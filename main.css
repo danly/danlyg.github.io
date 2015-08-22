@@ -3,13 +3,15 @@ html, body {
   margin: 0px;
   font-family: 'Open Sans', sans-serif;
   color: black; 
-  background-color: #FEFEFE;
+  background-color: #808080;
 }
 
 .content {
+  text-align: center;
   position: inherit;
   width: 1000px;
   margin: 0 auto;
+  color: white;
 }
 
 .navbar {
@@ -27,16 +29,29 @@ html, body {
   margin: 0 auto;
 }
 
-.navContent h2, h3 {
-  display: inline-block;
+.navContent h2 {
   margin-left: 15px;
 }
 
 .top {
-  position: absolute;
+  display: none;
+  position: fixed;
+  height: 65px;
+  width: 65px;
   right: 15px;
-  margin-top: 25px;
-  opacity: 0.5;
+  bottom: 15px;
+  color: white;
+  opacity: 0.8;
+  border-radius: 20px;
+  font-size: 34px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.top div {
+  transform: scaleY(0.7);
+  margin-top: 10px;
 }
 
 .top:hover, .top:active{
@@ -46,11 +61,15 @@ html, body {
 
 .headerContainer {
   position: relative;
-  margin: 0px 0px 25px;
+  margin: 0 auto;
   top: 100px;
+  background-color: #FEFEFE;
   border-radius: 20px;
   box-shadow: 5px 2px 10px black;
   overflow: hidden;
+  width: 95%;
+  color: black;
+  text-align: left;
 }
 
 .headerContainer img{
@@ -61,7 +80,7 @@ html, body {
   float: left;
 }
 .headerContainer .title{
-  margin-top: 25px;
+  margin-top: 50px;
   float: left;
 }
 .headerContainer h1 {
@@ -74,19 +93,38 @@ html, body {
 .logoContainer{
   position: relative;
   float: left;
-  margin-left: 10px;
+  margin-left: -10px;
+  margin-top: 12px;
   height: 150px;
-  border: 1px solid black;
 }
 
 .logoContainer .logoButton{
   position: relative;
   float: left;
   margin: 25px;
-  background-color: skyblue;
   height: 100px;
   width: 100px;
+  overflow: hidden;
+  transition: transform 1.5s;
 }
+
+.logoButton:hover {
+  transform:rotate(360deg);
+}
+
+.logoButton img {
+  margin: 0;
+  position: absolute;
+  width: 90%;
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+}
+
+.logoButton img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
 
 .headerContainer .triangle {
   position: absolute;
@@ -125,10 +163,24 @@ html, body {
   line-height: 200%;
 }
 
+.gearLogo {
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.gearLogo img{
+  width: 100%;
+}
+
+
 .set {
   width: 17%;
   margin-left: 3%;
   float: left;
+  text-align: left;
 }
 
 .set h3 {
@@ -136,22 +188,32 @@ html, body {
   margin-left: 22px;
 }
 
-.projectsContainer{
+.projectsContainer {
   position: relative;
-  top: 115px;
+  margin: 0 auto;
+  background-color: #FEFEFE;
+  border-radius: 20px;
+  box-shadow: 5px 2px 10px black;
+  overflow: hidden;
+  width: 95%;
+  color: black;
+}
+
+.projectsContainer h2 {
+  margin-top: 10px;
+}
+
+.projectsRow {
   width: 100%;
 }
-.projectsContainer h2{
-  margin-top: 0px;
-}
-
 
 .project {
-  float: left;
+  display:inline-block;
   width: 30%;
   text-align: center;
-  margin: 0px 15px;
+  margin: 0px 14px;
 }
+
 .project .projectHeight{
   height: 365px;
 }

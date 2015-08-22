@@ -5,12 +5,14 @@
   <script type="text/javascript" src="./main.js"></script>
   <link rel="stylesheet" type="text/css" href="./main.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="./animation.css">
 </head>
 <body>
   <div class='navbar'>
     <div class='navContent'>
       <h2>DG</h2>
-      <h3 class='top'>Top<h3>
+      <div class='gearLogo'><img class='gear' src="./images/gearwhite.png"></div>
+      <div class='top'><div>^</div></div>
     </div>
   </div>
   <div class='content'>
@@ -19,25 +21,22 @@
       <div class='title'> 
         <h1>Daniel Gih</h1>
         <h2>Full Stack Web Developer</h2>
-        <h3>Mechanical Engineer Turned Coder</h3>
       </div>
       <div class='logoContainer'>
-        <div class='logoButton' id='gh'>Github</div>
-        <div class='logoButton' id='li'>LinkedIn</div>
-        <div class='logoButton' id='em'>Email</div>
+        <div class='logoButton' id='gh'><img src="./images/Github.png"></div>
+        <div class='logoButton' id='li'><img src="./images/linkedin.png"></div>
+        <div class='logoButton' id='em'><img src="./images/emailblack.png"></div>
       </div>
       <div class='triangle'></div>
     </div>
     <div class="contentContainer">
       <div class="aboutContainer">
         <div class='aboutMe'>
-          <h2>About Me</h2>
-          <p>I am very interested the freedom of doing my own design and I found that web development is a great way to get into this industry. The hyper-connected world facinates me. I decided it would be silly if I did not immersive myself in it by creating for it. My friend recommended GA and the rest is history. It was challenging and my stamina and sanity was put to the limit. Was it worth it? Yes.
-          </p>
+          <h3>Former Mechanical Engineer turned Web Developer</h3>
+          <h3>San Francisco, CA</h3> <br>
         </div>
 
         <div class='skills'>
-          <h2>Skills</h2>
           <div class='set'>
             <h3>Languages</h3>
             <ul>
@@ -93,31 +92,33 @@
 
       <div class='projectsContainer'>
         <h2>Projects</h2>
-        <div class='project'>
-          <div class='projectOverlay'>
-            <h2>meowsterhits</h2>
-            <h4>Node.js/express/HTML/CSS</h4>
+        <div class='projectsRow'>
+          <div class='project'>
+            <div class='projectOverlay'>
+              <h2>meowsterhits</h2>
+              <h4>Node.js/express/HTML/CSS</h4>
+            </div>
+            <div class='projectHeight'>
+              <img src="./images/meowsterhits_logo.jpg">
+            </div>
           </div>
-          <div class='projectHeight'>
-            <img src="./images/meowsterhits_logo.jpg">
+          <div class='project'>
+            <div class='projectOverlay'>
+              <h2>Litrix</h2>
+              <h4>Ruby on Rails/PostgreSQL</h4>
+            </div>
+            <div class='projectHeight'>
+              <img src="./images/litrix_photo.jpg">
+            </div>
           </div>
-        </div>
-        <div class='project'>
-          <div class='projectOverlay'>
-            <h2>Litrix</h2>
-            <h4>Ruby on Rails/PostgreSQL</h4>
-          </div>
-          <div class='projectHeight'>
-            <img src="./images/litrix_photo.jpg">
-          </div>
-        </div>
-        <div class='project'>
-          <div class='projectOverlay'>
-            <h2>Robin</h2>
-            <h4>Ruby on Rails/stripe API</h4>
-          </div>
-          <div class='projectHeight'>
-            <img src="./images/robin_logo.jpg">
+          <div class='project'>
+            <div class='projectOverlay'>
+              <h2>Robin</h2>
+              <h4>Ruby on Rails/stripe API</h4>
+            </div>
+            <div class='projectHeight'>
+              <img src="./images/robin_logo.jpg">
+            </div>
           </div>
         </div>
       </div>
