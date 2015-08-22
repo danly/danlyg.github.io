@@ -153,14 +153,14 @@ html, body {
 }
 .aboutContainer {
   position: relative;
-  top: 125px;
+  top: 115px;
   height: 425px;
 }
 
-.aboutMe p{
+.aboutMe h3{
   position: relative;
-  margin: 0px 30px;
-  line-height: 200%;
+  line-height: 175%;
+  font-weight: 100;
 }
 
 .gearLogo {
@@ -175,7 +175,6 @@ html, body {
   width: 100%;
 }
 
-
 .set {
   width: 17%;
   margin-left: 3%;
@@ -184,8 +183,9 @@ html, body {
 }
 
 .set h3 {
-  margin-top: 0;
+  margin-top: 10px;
   margin-left: 22px;
+  font-weight: 100;
 }
 
 .projectsContainer {
