@@ -126,7 +126,8 @@ html, body {
 }
 
 
-.headerContainer .triangle {
+.triangle {
+  display: none;
   position: absolute;
   right: 0px;
   bottom: 0px;
