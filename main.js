@@ -1,4 +1,1 @@
-$(function(){
-  console.log('working')
-
-})
+// dont need js
